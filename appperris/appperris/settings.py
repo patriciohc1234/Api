@@ -25,7 +25,7 @@ SECRET_KEY = '2*r-9=op2+2ekp%u7n=!4+$pg1fxsamg(qblq=g(lb37!n7**v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['apiapp.pythonanywhere.com']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	'rest_framework',
     'apiperris',
+	'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -109,9 +110,9 @@ REST_FRAMEWORK = {
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-es'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Santiago'
 
 USE_I18N = True
 
@@ -126,5 +127,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 CORS_ORIGIN_REGEX_WHITELIST = (
-     'http://127.0.0.1:8887/'
+     'https://patriciohc1234.github.io/'
 )
